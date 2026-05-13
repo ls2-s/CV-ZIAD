@@ -17,7 +17,7 @@
       color: #00ff66;
       min-height: 100vh;
       overflow-x: hidden;
-      overflow-y: auto; /* ✅ التمرير يعمل بشكل ممتاز */
+      overflow-y: auto;
     }
 
     /* Canvas الخلفية - تحسين الأداء */
@@ -29,7 +29,7 @@
       width: 100%;
       height: 100%;
       display: block;
-      pointer-events: none; /* الأزرار تعمل بدون تداخل */
+      pointer-events: none;
     }
 
     /* المحتوى الرئيسي - قابل للتمرير والتكبير */
@@ -72,7 +72,6 @@
       text-align: center;
       direction: ltr;
       word-break: break-word;
-      /* ✅ تمت إزالة الإطار، الخلفية، الظل، والـ backdrop-filter */
     }
 
     /* الأزرار */
@@ -174,7 +173,6 @@
   <div class="content">
     <h1>⚡ زياد عماد ⚡</h1>
 
-    <!-- ✅ النصوص بدون إطار، بدون خلفية، بدون أي تأثيرات إضافية -->
     <div class="bio">
       بسمَ ـ ، آللهہ ـ ، آلࢪحمَن ، آلࢪحيمَ ـ🖤↯
 
@@ -221,8 +219,8 @@ White Hat Hacker🖤&Developer and programmer 🖤
 
     <div class="buttons">
       <a href="https://wa.me/201212243060" target="_blank">📱 واتساب</a>
-      <!-- ✅ الزر الجديد: متجري -->
-      <a href="#" class="shop-btn" id="shopLink">🛒 متجري</a>
+      <!-- ✅ زر متجري - يفتح رابط المتجر مباشرة -->
+      <a href="https://ls2-s.github.io/www.lord-store.-com/" target="_blank" class="shop-btn">🛒 متجري</a>
     </div>
 
     <div class="footer-note">
@@ -283,17 +281,6 @@ White Hat Hacker🖤&Developer and programmer 🖤
         resizeCanvas();
         initDrops();
       });
-
-      // زر متجري - قابل للتعديل بسهولة
-      const shopBtn = document.getElementById('shopLink');
-      if (shopBtn) {
-        shopBtn.addEventListener('click', function(e) {
-          e.preventDefault();
-          // 👇 غير هذا الرابط لرابط متجرك الحقيقي
-          alert("https://ls2-s.github.io/www.lord-store.-com/");
-          // window.open('https://ls2-s.github.io/www.lord-store.-com/', '_blank');
-        });
-      }
     })();
   </script>
 </body>
