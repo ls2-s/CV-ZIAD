@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover" />
+  <title>يخص زياد عماد 😉🙈 | لورد</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: black;
+      font-family: "Courier New", monospace, "Cairo";
+      color: #00ff66;
+      min-height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto; /* ✅ التمرير يعمل بشكل ممتاز */
+    }
+
+    /* Canvas الخلفية - تحسين الأداء */
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      pointer-events: none; /* الأزرار تعمل بدون تداخل */
+    }
+
+    /* المحتوى الرئيسي - قابل للتمرير والتكبير */
+    .content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      color: #00ff66;
+      text-shadow: 0 0 10px #00ff66;
+      padding: 30px 20px 60px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 8vw, 4rem);
+      margin-bottom: 25px;
+      animation: glow 2s infinite alternate;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #00ff66; }
+      to { text-shadow: 0 0 25px #00ff66; }
+    }
+
+    /* صندوق البايو - بدون إطار أو خلفية أو تأثيرات! */
+    .bio {
+      font-size: clamp(0.9rem, 4vw, 1.2rem);
+      line-height: 1.9;
+      white-space: pre-line;
+      max-width: 900px;
+      margin: 20px auto;
+      text-align: center;
+      direction: ltr;
+      word-break: break-word;
+      /* ✅ تمت إزالة الإطار، الخلفية، الظل، والـ backdrop-filter */
+    }
+
+    /* الأزرار */
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 18px;
+      margin: 30px 0 20px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      padding: 12px 28px;
+      border: 2px solid #00ff66;
+      color: #00ff66;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: 0.3s ease;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(4px);
+      cursor: pointer;
+      letter-spacing: 1px;
+    }
+
+    .buttons a:hover {
+      background: #00ff66;
+      color: black;
+      box-shadow: 0 0 20px #00ff66;
+      transform: scale(1.05);
+    }
+
+    /* زر متجري المميز */
+    .shop-btn {
+      background: #00ff66 !important;
+      color: black !important;
+      box-shadow: 0 0 15px #00ff66;
+      border: 2px solid #ffffffaa !important;
+    }
+
+    .shop-btn:hover {
+      background: white !important;
+      color: black !important;
+      transform: scale(1.07);
+      box-shadow: 0 0 30px #00ff66;
+    }
+
+    /* تذييل أنيق */
+    .footer-note {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      border-top: 1px dashed #00ff66;
+      padding-top: 20px;
+      width: 100%;
+    }
+
+    /* شريط تمرير جميل */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #0a0f0a;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #00ff66;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #00cc55;
+    }
+
+    /* تحسينات للهواتف */
+    @media (max-width: 650px) {
+      .content {
+        padding: 20px 15px 40px;
+      }
+      .bio {
+        font-size: 0.85rem;
+        line-height: 1.7;
+      }
+      .buttons a {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="matrix"></canvas>
+
+  <div class="content">
+    <h1>⚡ زياد عماد ⚡</h1>
+
+    <!-- ✅ النصوص بدون إطار، بدون خلفية، بدون أي تأثيرات إضافية -->
+    <div class="bio">
+      بسمَ ـ ، آللهہ ـ ، آلࢪحمَن ، آلࢪحيمَ ـ🖤↯
+
+ اســـمـ، ـي» زيــاد  ♪
+ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+الــشــهـ،ـره» 𝑳𝑶𝑹𝑫»♬ ــــــــ 
+White Hat Hacker🖤&Developer and programmer 🖤
+
+العـــمــر» 18
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+خبــراتــي»
+                                                                                              "𝑰𝑻"
+
+𝑪𝑹𝑬𝑨𝑻𝑰𝑵𝑮 𝑨𝑵𝑫 𝑫𝑬𝑽𝑬𝑳𝑶𝑷𝑰𝑵𝑮 𝑨𝑷𝑷𝑳𝑰𝑪𝑨𝑻𝑰𝑶𝑵𝑺»   «𝑾𝑬𝑩 𝑫𝑬𝑽𝑬𝑳𝑶𝑷𝑴𝑬𝑵𝑻 𝑨𝑵𝑫 𝑷𝑹𝑶𝑮𝑹𝑨𝑴𝑴𝑰𝑵𝑮»
+ 
+                                              𝟏ـ«#𝑵𝑬𝑻 𝑾𝑶𝑹𝑲𝑰𝑵𝑮~» 
+𝑰𝑷 𝑨𝑫𝑫𝑹𝑬𝑺𝑺𝑬𝑺ـ𝑰𝑷 𝑽 𝟒ـ𝑷𝑰 𝑽 𝟔
+𝑴𝑨𝑪 𝑨𝑫𝑫𝑹𝑬𝑺𝑺𝑬𝑺
+𝑻𝑪𝑷.𝑼𝑫𝑩.𝑻𝑯𝑹𝑬𝑬ـ𝑾𝑯𝒀 𝑯𝑨𝑵𝑫𝑺𝑯𝑬𝑪𝑲
+𝑪𝑶𝑴𝑴𝑶𝑵 𝑷𝑶𝑹𝑻𝑺 𝑨𝑵𝑫 𝑷𝑹𝑶𝑻𝑶𝑪𝑶𝑳𝑺
+𝑻𝑯𝑬 𝑶𝑺𝑰 𝑴𝑶𝑫𝑬𝑳
+𝑺𝑼𝑩𝑵𝑬𝑻𝑻𝑰𝑵𝑮
+𝟐ـ  «𝑨𝑹𝑫𝑼𝑰𝑵𝑶 𝑼𝑵𝑶.𝑵𝑨𝑵𝑶» 
+
+𝟑ـ.«𝑨𝑷𝑷𝑳𝑰𝑪𝑨𝑻𝑰𝑶𝑵» 
+𝑻𝑼𝑹𝑴𝑼𝑿
+𝑷𝒀𝑻𝑯𝑶𝑵𝑬
+{𝑳𝑰𝑵𝑼𝑿}
+𝑲𝑨𝑳𝑰 𝑳𝑰𝑵𝑼𝑿
+𝑲𝑨𝑳𝑰 𝑵𝑼𝑻 𝑯𝑼𝑵𝑻𝑬𝑹
+𝑷𝑨𝑹𝑹𝑶𝑻 𝑳𝑰𝑵𝑼𝑿
+
+𝟒ـ «𝑴𝒀𝑷𝑹𝑶𝑮𝑹𝑨𝑴 𝑳𝑨𝑵𝑮𝑼𝑨𝑮𝑬𝑺» 
+«𝑱𝑨𝑽𝑨 𝑺𝑪𝑹𝑰𝑷𝑻»«𝑱𝑨𝑽𝑨»«𝑷𝒀𝑻𝑯𝑶𝑵𝑬»«𝑯𝑻𝑴𝑳»«𝑪++»«𝑪#»«𝑷𝑯𝑷»«𝑪𝑺𝑺»
+
+𝟓ـ«𝑴𝑶𝑹𝑬 𝑶𝑭 𝑴𝒀 𝑬𝑿𝑷𝑬𝑹𝑰𝑬𝑵𝑪𝑬»
+(اتوقع مني اي حاجه ف اي حاجةة) ~
+ــــــــــــــــــــــــــــــــــــــ
+بــلــدي» اســيــوط
+مــن2020إلي2026 ومستمرين إن شاء الله 🤍🤍🌏🎀
+ليا حتت اخ كده اسمه حوكشه
+🌹🫶🏻وهوه عامل زي الطرحه السوده بيليق على كل حاجه 🎀❤❤
+    </div>
+
+    <div class="buttons">
+      <a href="https://wa.me/201212243060" target="_blank">📱 واتساب</a>
+      <!-- ✅ الزر الجديد: متجري -->
+      <a href="#" class="shop-btn" id="shopLink">🛒 متجري</a>
+    </div>
+
+    <div class="footer-note">
+      ⚡ LORD SECURITY | White Hat Hacker ⚡
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      // إعدادات الـ Matrix Rain - سلسة وفعالة
+      const canvas = document.getElementById("matrix");
+      if (!canvas) return;
+      const ctx = canvas.getContext("2d");
+
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
+
+      const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@zezo#%&";
+      const fontSize = 10;
+      let columns = Math.floor(canvas.width / fontSize);
+      let drops = [];
+
+      function initDrops() {
+        columns = Math.floor(canvas.width / fontSize);
+        drops = [];
+        for (let x = 0; x < columns; x++) drops[x] = Math.floor(Math.random() * -50);
+      }
+      initDrops();
+
+      function drawMatrix() {
+        if (!ctx) return;
+        ctx.fillStyle = "rgba(0, 0, 0, 0.06)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "#0F0";
+        ctx.font = fontSize + "px monospace";
+
+        for (let i = 0; i < drops.length; i++) {
+          const text = letters.charAt(Math.floor(Math.random() * letters.length));
+          const x = i * fontSize;
+          const y = drops[i] * fontSize;
+          ctx.fillText(text, x, y);
+          
+          if (y > canvas.height && Math.random() > 0.975) {
+            drops[i] = 0;
+          }
+          drops[i]++;
+        }
+        requestAnimationFrame(drawMatrix);
+      }
+
+      drawMatrix();
+
+      window.addEventListener('resize', () => {
+        resizeCanvas();
+        initDrops();
+      });
+
+      // زر متجري - قابل للتعديل بسهولة
+      const shopBtn = document.getElementById('shopLink');
+      if (shopBtn) {
+        shopBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          // 👇 غير هذا الرابط لرابط متجرك الحقيقي
+          alert("✨ سيتم نقلك إلى المتجر ... يمكنك التواصل عبر واتساب لمعرفة المنتجات حاليًا ✨");
+          // window.open('https://ls2-s.github.io/www.lord-store.-com/', '_blank');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
